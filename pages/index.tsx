@@ -57,7 +57,7 @@ const Home = () => {
         workitemsCollection,
         where('startDate', '>=', startDate),
         where('startDate', '<=', endDate),
-        orderBy('startDate')
+        orderBy('updatedAt')
       );
     }
 
